@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@900&display=swap');
+*{margin: 0; padding: 0;}
+body{font: 16px "Nanum gothic", "malgun gothic", "dotum", "sans-serif"; min-width: 1600px; overflow-x: hidden; overflow-y: scroll;}
+ul,ol,li{list-style: none;}
+a{text-decoration: none; color: #333;}
+img{vertical-align: bottom;}
+
+/*layout*/
+header{width: 100%; height: auto; position: absolute; z-index: 10;}
+nav{width: 100%; height: 110px;}
+.popup{width: 100%; height: 50px; background-color: rgba(0,0,0,0.3);}
+/*main{}*/
+section{width: 100%; height: 1000px;}
+section:nth-child(1){background-color: #999; overflow: hidden; position: relative;}
+section:nth-child(2){background-color: #fff; padding-top: 50px;}
+section:nth-child(3){background-color: #f6f6f6; padding-top: 100px;}
+section:nth-child(4){background-color: #fff; padding-top: 50px;}
+footer{width: 100%; height: 500px; background-color: #fff;}
+.footer-up{width: 100%; height: 100px; background-color: #343434;}
+.footer-mid{width: 100%; height: 200px; background-color: #adadad;}
+.footer-down{width: 100%; height: 200px; background-color: #FFF;}
+
+/*header*/
+nav .nav-inner{width: 1280px; height: 110px; margin: 0 auto;}
+nav .nav-inner h1{float: left; height: 100%;}
+nav .nav-inner h1 img{margin-top: 17px;}
+
+nav .gnb{float: right; margin-top: 30px;}
+nav .gnb li{float: left;}
+nav .gnb a{display: inline-block; padding: 10px 20px; color: #FFF; font-weight: 800; font-size: 20px;}
+nav .gnb li:hover a{color: orange;}
+
+.popup .popup-inner{width: 1280px; height: 50px; margin: 0 auto; position: relative;}
+.popup .popup-inner button{width: 16px; height: 16px; border: none; outline: none; position: absolute; right: 15px; top: 5px; text-indent: -9999px; top: 50%; margin-top: -8px; z-index: 10; cursor: pointer; background: url(../img/x.png) no-repeat; background-size: contain;}
+.popup .slick-slide p{width: 100%; height: 100%;}
+.popup .slick-slide a{display: inline-block; width: 100%; height: 100%; color: #FFF; text-align: center; line-height: 50px;}
+
+/*section1*/
+section:nth-child(1) video{width: 100%; height: auto;}
+/*
+section:nth-child(1) .slogan{font-weight: 900; color: #FFF; position: absolute; font-size: 150px; top: 50%; right: 100px;margin-top: -180px; text-shadow: 2px 2px 2px rgba(0,0,0,0.5);}
+section:nth-child(1) .slogan span{font-size: 200px;}
+*/
+
+/*section2*/
+section:nth-child(2) .notice{width: 1280px; height: 60px; background-color: #FFBA9D; margin: 0 auto; border-radius: 20px;}
+section:nth-child(2) .notice h2{float: left; font-weight: 700; color: #580f0f; line-height: 60px; font-size: 18px; padding-left: 100px;}
+section:nth-child(2) .notice .notice-inner{float: left; width: 950px; line-height: 60px; color: #580f0f; overflow: hidden; margin-left: 50px; }
+section:nth-child(2) .notice-slider .slick-prev{position: absolute; right: 0; bottom: 10px; width: 30px; height: 20px; text-indent: -9999px; border: none; outline: none; cursor: pointer; background: url(../img/prevb.png) no-repeat; z-index: 100; background-size: contain;}
+section:nth-child(2) .notice-slider .slick-next{position: absolute; right: 0; top: 10px; width: 30px; height: 20px; text-indent: -9999px; border: none; outline: none; cursor: pointer; background: url(../img/preva.png) no-repeat; z-index: 100; background-size: contain;}
+section:nth-child(2) p{width: 1280px; height: 56px; margin: 74px auto; font-size: 36px; color: #580f0f;}
+section:nth-child(2) p span{display: block; height: 56px; margin: 0 20px; font-size: 18px; font-weight: 800; float: right; border-radius: 30px;}
+section:nth-child(2) p span:first-child{width: 237px; text-align: center; line-height: 56px; background-color: pink;}
+section:nth-child(2) p span:last-child{width: 197px; text-align: center; line-height: 56px; background-color: orangered;}
+section:nth-child(2) .product {width: 100%;}
+section:nth-child(2) .product .product-inner{width: 1280px; height: 400px; margin: 0 auto;}
+section:nth-child(2) .proslider .slick-slide{height: 400px;}
+section:nth-child(2) .proslider a{display: block; width: 100%; height: 100%; position: relative; text-align: center;}
+section:nth-child(2) .proslider .slick-slide img{margin: 0 auto;}
+section:nth-child(2) .proslider a span{position: absolute; display: block; width: 100%; padding-left: 10px;}
+section:nth-child(2) .proslider a .pro-name{bottom: 20px; left: 0;}
+section:nth-child(2) .proslider a .pro-value{bottom: 0; left: 00px; font-weight: 800;}
+section:nth-child(2) .proslider .slick-prev{position: absolute; left: -45px; top: 50%; margin-top: -18px; background: url(../img/proprev.png) no-repeat; width: 17px; height: 36px; border: none; outline: none; cursor: pointer; z-index: 8; text-indent: -9999px; background-size: contain;}
+section:nth-child(2) .proslider .slick-next{position: absolute; right: -30px; top: 50%; margin-top: -18px; background: url(../img/pronext.png) no-repeat; width: 17px; height: 36px; border: none; outline: none; cursor: pointer; z-index: 8; text-indent: -9999px; background-size: contain;}
+
+section:nth-child(2) button{width: 400px; height: 60px; border: 2px solid #E4E4E4; color: #333; text-align: center; line-height: 60px; cursor: pointer; margin: 30px auto; display: block; background-color: #FFF; color: #E25500; font-weight: 700; font-size: 20px; transition: all 0.4s;}
+section:nth-child(2) button:hover{color: #FFF; background-color: #E25500;}
+
+
+/*section3*/
+section:nth-child(3) .section3-inner{width: 1024px; height: 680px; margin: 0 auto;}
+section:nth-child(3) .section3-inner .probio{float: left; display: block; width: 500px; height: 100%; background: url(../img/probio.jpg) no-repeat; background-size: cover;}
+section:nth-child(3) .section3-inner .couponBox{width: 500px; height: 316px; float: right; margin-bottom: 25px; background: url(../img/coupon.jpg) no-repeat; position: relative; background-size: cover;}
+section:nth-child(3) .section3-inner .story{width: 500px; height: 340px; float: right; background: url(../img/exid.jpg) no-repeat; background-size: cover; position: relative;}
+section:nth-child(3) .section3-inner .couponBox a, 
+section:nth-child(3) .section3-inner .story a{position: absolute; width: 110px; height: 90px; left: 0; bottom: 0; background-color: #FF3c00; text-align: center; line-height: 140px;}
+section:nth-child(3) .section3-inner .couponBox p img, 
+section:nth-child(3) .section3-inner .story p img{display: inline-block; transition: all 0.4s; vertical-align: top;}
+section:nth-child(3) .section3-inner .couponBox:hover p img,section:nth-child(3) .section3-inner .story:hover p img{transform: rotate(180deg);}
+
+/*section4*/
+section:nth-child(4) .section4-inner{width: 1280px; margin: 0 auto;}
+section:nth-child(4) .section4-inner h2{font-size:40px; color: black; margin-bottom: 52px; letter-spacing: 20px; text-align: center;}
+section:nth-child(4) .section4-inner h2 .fword{font-size: 30px; color: #696969;}
+section:nth-child(4) .section4-inner h2 .tword{font-size: 20px; color: #959595;}
+section:nth-child(4) .section4-inner p{font-size: 20px; text-align: center; letter-spacing: 3px;}
+
+section:nth-child(4) .section4-inner .subscribe{overflow: hidden; width: 980px; margin: 20px auto;}
+section:nth-child(4) .section4-inner .subscribe li{width: 300px; height: 480px; overflow: hidden; float: left; margin-right: 40px;}
+section:nth-child(4) .section4-inner .subscribe li:last-child{margin-right: 0;}
+section:nth-child(4) .section4-inner .subscribe li a{display: block; width: 100%; height: 100%; position: relative;}
+section:nth-child(4) .section4-inner .subscribe li a .sub{position: absolute; left: 0; top: 0; width: 100%;}
+section:nth-child(4) .section4-inner .subscribe li a .logo{position: absolute; left: 10px; top: 10px; box-shadow: 5px 5px 5px; transition: all 0.8s;}
+section:nth-child(4) .section4-inner .subscribe li a .Bbox{position: absolute; left: 0; bottom: -100px; width: 300px; height: auto; transition: all 0.5s;}
+section:nth-child(4) .section4-inner .subscribe li:hover .logo{box-shadow: 2px 2px 2px;}
+section:nth-child(4) .section4-inner .subscribe li:hover .Bbox{bottom: 0;}
+section:nth-child(4) .section4-inner .subscribe li a .Bbox img{width: 100%;}
+section:nth-child(4) .sub-button{width: 323px; height: 60px; border: 2px solid #7E7E7E; color: #7E7E7E; text-align: center; line-height: 60px; cursor: pointer; background-color: rgba(255,255,255,1); margin: 30px auto; display: block; font-weight: bold;}
+
+/*footer*/
+
+footer .sns{width: 100%; height: 100px; background-color: #801e00;}
+footer .info{width: 100%; height: 200px;}
+footer .sns .snsinner{ width: 1280px; height: 100%; margin: 0 auto;}
+footer .sns .social{float: right; margin-top: 20px;}
+footer .sns .social li{float: left; margin-left: 20px;}
+footer .sns .social li a{display: block; width: 100%; height: 100%; transition: all 0.4s;}
+footer .sns .social li a img{opacity: 0.6; transition: all 0.7s;}
+footer .sns .social li:hover a img{opacity: 1;}
+footer .info .infoinner{width: 1280px; height: 100%; margin: 0 auto; padding-top: 35px; box-sizing: border-box;}
+footer .info .infoinner p{float: left;}
+footer .info .infoinner p:nth-child(1){margin-right: 135px; line-height: 250%;}
+footer .info .infoinner p:nth-child(1) span{font-size: 35px;}
+footer .info .infoinner p:nth-child(2){margin-right: 10px; line-height: 200%;}
+footer .info .infoinner p:nth-child(2) a{font-size: 20px; display: inline-block; padding-bottom: 2px; border-bottom: 1px solid #000;}
+footer .info .infoinner ul{float: left; height: 130px;}
+footer .info .infoinner ul li{float: left; margin-right: 10px; margin-top: 10px; opacity: 0.6; transition: all 0.5s;}
+footer .info .infoinner ul li:last-child{margin-top: 0;}
+footer .info .infoinner ul li:hover{opacity: 1;}
+footer .footerinner{width: 1280px; height: 100%; margin: 0 auto; position: relative; padding-top: 30px;}
+footer .footerinner h2{float: left; margin-top: 20px; margin-right: 30px;}
+footer .footerinner .privacy{float: left;}
+footer .footerinner .privacy li{float: left;}
+footer .footerinner .privacy li::after{content: "   |   "; white-space: pre; font-size: 10pt; position: relative; top: -2px;}
+footer .footerinner .privacy li:last-child::after{content: "";}
+footer .footerinner .privacy li a{font-size: 11pt; font-weight: bold;}
+footer .footerinner .addr, 
+footer .footerinner .introduce{float: left; font-size: 11pt; color: #4d4d4d; margin-top: 35px;}
